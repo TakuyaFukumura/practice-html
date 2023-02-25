@@ -91,5 +91,12 @@
         <iframe src="./base.html" ></iframe>
         <p>PDFファイルを指定します。</p>
         <object data="./test.pdf" width="400" height="300"></object>
+        <hr>
+        <img src="./bear.png" usemap="#sample" alt="サンプル" width="384" height="128"><!-- name属性とリンクさせる -->
+        <map name="sample"><!-- usemap属性とリンクさせる -->
+            <area href="aaa.htm" shape="rect" alt="四角形" coords="15,19,126,104"><!-- 左上の位置xy, 対角御井g下の位置xy -->
+            <area href="bbb.htm" shape="circle" alt="円形" coords="197,69,54"><!-- 中心位置xy, 半径 -->
+            <area href="ccc.htm" shape="poly" alt="多角形" coords="306,12,261,109,378,92"><!-- 上の位置、左下の位置、右下の位置 -->
+        </map><!-- 特定領域にのみ設定する -->
     </body>
 </html>
